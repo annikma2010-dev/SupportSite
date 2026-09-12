@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Пятница AI ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="header">
+            <div class="avatar">❤️</div>
+
+            <div>
+                <h1>Пятница AI</h1>
+                <p>Твой доброжелательный помощник</p>
+            </div>
+        </header>
+
+        <section id="chat" class="chat">
+
+            <div class="message friday">
+                <div class="message-name">
+                    Пятница
+                </div>
+
+                <div class="bubble">
+                 Здраствуй! Элина что-то случилось? Я Пятница ваш персональный помощник.<br
+
+                  Я Пятница. Расскажи, что произошло,
+                    и я постараюсь тебя поддержать.
+                </div>
+            </div>
+
+        </section>
+
+        <div id="typing" class="typing">
+            Пятница печатает...
+        </div>
+
+        <section class="input-area">
+
+            <textarea
+                id="userText"
+                placeholder="Напиши сообщение..."
+                rows="2"
+            ></textarea>
+
+            <div class="buttons">
+
+                <button
+                    id="voiceButton"
+                    onclick="startVoice()"
+                    title="Голосовой ввод"
+                >
+                    🎤
+                </button>
+
+                <button
+                    onclick="sendMessage()"
+                    class="send-button"
+                >
+                    Отправить
+                </button>
+
+            </div>
+
+        </section>
+
+        <div class="extra-buttons">
+
+            <button onclick="readLastAnswer()">
+                🔊 Прочитать ответ
+            </button>
+
+            <button onclick="clearChat()">
+                🗑️ Очистить чат
+            </button>
+
+        </div>
+
+        <p class="notice">
+            Пятница — виртуальный помощник.
+            Она не заменяет специалистов она может только выслушать.
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
